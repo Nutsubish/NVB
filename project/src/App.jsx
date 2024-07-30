@@ -1,12 +1,14 @@
+import React from "react";
+import Main from "./Menu.jsx";
 
 
-function App() {
-
+const App = () => {
 
   return (
     <>
-
+      <Main/>
     </>
+    
   )
 }
 
