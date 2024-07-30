@@ -10,6 +10,7 @@ import Lesson1Task2 from "./Components/page1/Lesson2.jsx";
 import Lesson2Task2 from "./Components/page2/Lesson2.jsx";
 import Lesson1Task3 from "./Components/page1/Lesson3.jsx";
 import Lesson2Task3 from "./Components/page2/Lesson3.jsx";
+import Signup from "./Pages/SignUp.jsx";
 
 const Main = () => {
 
@@ -27,6 +28,7 @@ const Main = () => {
                 <Route path="/Courses/p4" element={<Lesson2Task2/>}/>
                 <Route path="/Courses/p5" element={<Lesson1Task3/>} />
                 <Route path="/Courses/p6" element={<Lesson2Task3/>} />
+                <Route path="/SignUp" element={<Signup/>}/>
             </Route>
           </Routes>
         </Router>

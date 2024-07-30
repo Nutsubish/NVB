@@ -5,7 +5,7 @@ const Navbar = () =>{
         <>
             <nav id="navbar">
                 <Link to={"/"}>
-                    <a className="Home">Home</a>
+                    Home
                 </Link>
                 <Link to={"/Courses"}>
                     <a className="Course">Course</a>
@@ -13,7 +13,12 @@ const Navbar = () =>{
                 <Link to={"/Abouts"}>
                     <a className="About">About</a>
                 </Link>
+                <Link to={"/SignUp"}>
+                    <a>Signup</a>
+                </Link>
             </nav>
+
+
         </>
     )
 }
