@@ -1,13 +1,30 @@
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 
-const Lesson2Task2 = () =>{
-    return(
+const Lesson2Task2 = () => {
+    const [inputValue, setInputValue] = useState('');
+    const [inputValue2, setInputValue2] = useState('');
+
+    const handleInputChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    const handleInputChange2 = (e) => {
+        setInputValue2(e.target.value);
+    };
+
+    return (
         <>
-            <h1>Hello This is Lesson2 Task 2</h1>
-
-            
+            <h1 id='hellovano'>Hello this is Lesson 2 Task 2</h1>
+            <p id="vanos">Fix this Code</p>
+            <p id="vano">
+                print
+                <input type="text" value={inputValue} onChange={handleInputChange} id="vanogastile" />
+                "Hello"
+                <input type="text" value={inputValue2} onChange={handleInputChange2} id="vanogastile" />
+            </p>
             <Link to={"/Courses/p6"}>
-                <button>Next Task</button>
+                <button disabled={inputValue != '(' || inputValue2 != ')'}>Next Task</button>
             </Link>
             <Link to={"/Courses/p2"}>
                 <button>Previous Task</button>
@@ -16,4 +33,4 @@ const Lesson2Task2 = () =>{
     );
 }
 
-export default Lesson2Task2
+export default Lesson2Task2;
