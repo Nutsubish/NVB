@@ -11,7 +11,9 @@ const ForCourse = () => {
                 <Link to={"/Courses/p2"} id="linkid2">
                     <div id="idk2">Lesson 2</div>
                 </Link>
-                
+                <Link to={"/Courses/p7"}> 
+                    <div id="idk3">Lesson 3</div>
+                </Link>
         </>
     )
 }

@@ -11,6 +11,9 @@ import Lesson2Task2 from "./Components/page2/Lesson2.jsx";
 import Lesson1Task3 from "./Components/page1/Lesson3.jsx";
 import Lesson2Task3 from "./Components/page2/Lesson3.jsx";
 import Signup from "./Pages/SignUp.jsx";
+import Ex3 from "./Components/page3/Lesson1.jsx";
+import Lesson3Task2 from "./Components/page3/Lesson2.jsx";
+import Lesson3Task3 from "./Components/page3/Lesson3.jsx";
 
 const Main = () => {
 
@@ -29,6 +32,9 @@ const Main = () => {
                 <Route path="/Courses/p5" element={<Lesson1Task3/>} />
                 <Route path="/Courses/p6" element={<Lesson2Task3/>} />
                 <Route path="/SignUp" element={<Signup/>}/>
+                <Route path="/Courses/p7" element={<Ex3/>}/>
+                <Route path="/Courses/p8" element={<Lesson3Task2/>}/>
+                <Route path="/Courses/p9" element={<Lesson3Task3/>}/>
             </Route>
           </Routes>
         </Router>
@@ -37,5 +43,5 @@ const Main = () => {
     )
   }
   
-  export default Main
+export default Main
   
