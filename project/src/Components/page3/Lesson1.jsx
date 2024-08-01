@@ -16,7 +16,7 @@ const Ex3 = () => {
 
     return (
         <>
-            <h1>Hello this is Lesson3 Task1</h1>
+            <h1>Hello this is Lesson3 Task1 </h1>
             <p>How To Create Variable Properly?</p>
 
             <button onClick={() => handleButtonClick('.-myvariable')} id="vanobtn">
