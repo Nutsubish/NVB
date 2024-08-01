@@ -51,7 +51,7 @@ const Lesson1Task2 = () => {
         setInputValue(e.target.value);
     };
 
-    const isButtonDisabled = inputValue !== '"';
+    const isButtonDisabled = inputValue !== 'Hello World';
 
     return (
         <>
@@ -79,7 +79,7 @@ const Lesson1Task2 = () => {
                         <Link to={"/Courses/p1"}>
                             <button id="prev-btn">Previous Task</button>
                         </Link>
-                        <Link to={"/Courses/p2"}>
+                        <Link to={"/Courses/p5"}>
                             <button id="next2-btn" disabled={isButtonDisabled}>Next Task</button>
                         </Link>
                     </div>
