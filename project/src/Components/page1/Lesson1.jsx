@@ -18,20 +18,29 @@ const Ex1 = () =>{
 
     return (
         <>
-            <h1>Hello This is Lesson 1 Task 1</h1>
-            <p>
-                print(
-                <input type="text" value={inputValue} onChange={handleInputChange} />
-                Hello
-                <input type="text" value={inputValue2} onChange={handleInputChange2} />
-                )
-            </p>
-            <Link to={"/Courses/p3"}>
-                <button disabled={inputValue != '"' || inputValue2 != '"'}>Next Task</button>
-            </Link>
-            <Link to={"/Courses"}>
-                <button>Back to Menu</button>
-            </Link>
+        <div id="main-body-div">
+            <div id="main-lesson-div">
+                    <p id="lesson1-p">Task No.1</p>
+                    <div id="back-menu">
+                    <Link to={"/Courses"}>
+                        <button id="back-btn">X Back to Menu</button>
+                    </Link>
+                    </div>
+
+                    <div id="test-div">
+                        <p id="test-p">
+                            print(
+                            <input type="text" value={inputValue} onChange={handleInputChange} className="lesson-input"/>
+                            Hello
+                            <input type="text" value={inputValue2} onChange={handleInputChange2} className="lesson-input" />
+                            )
+                        </p>
+                    </div>
+            </div>
+                        <Link to={"/Courses/p3"}>
+                            <button id="next-btn" disabled={inputValue != '"' || inputValue2 != '"'}>Next Task</button>
+                        </Link>
+        </div>
         </>
     );
 }

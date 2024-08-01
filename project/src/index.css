@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Press Start 2P", system-ui; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gilda+Display&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&family=Press+Start+2P&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Roboto Slab", serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background-color: #f2f5f7;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    font-size: 1.15rem;
+}
+
+#navbar-a {
+    display: flex;
+    gap: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #222;
+    /* font-size: 1.15rem; */
+    color: white;
+}
+
+#navbar a {
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 1000ms;
+    transition-property: color;
+}
+
+#navbar a:focus,
+#navbar a:hover {
+    color: #ffffff;
+}
+
+#navbar a:focus:after,
+#navbar a:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+#navbar a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -10px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 145, 0);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 550ms;
+    transition-property: width, left;
+}
+
+#logo-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logo-p {
+    font-size: 1.2rem;
+    font-family: "Press Start 2P", system-ui;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+.goa {
+    color: rgb(0, 145, 0);
+}
+
+#sign-up p {
+    background-color: #ffa310;
+    color: #222;
+    padding: 10px 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 7px;
+}
+
+#python-logo {
+    width: 150px;
+    align-self: flex-start;
+}
+
+#main-introduction-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    background-color: white;
+    padding: 50px;
+    margin-top: 75px;
+    margin-left: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.082) 0px 0px 0px 1px;
+}
+
+#introduction-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#introduction-p {
+    font-size: 2.7rem;
+    color: #2d3846;
+    font-weight: 600;
+}
+
+#python-desc {
+    color: rgb(126, 126, 126);
+    font-weight: 400;
+}
+
+#green-bar {
+    width: 125%;
+    height: 10px;
+    margin-top: 30px;
+    background-color: rgb(0, 150, 0);
+    border-radius: 50px;
+    position: relative; right: 125px;
+}
+
+#lessons-div {
+    margin-top: 50px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#lessons-div a {
+    color: #2d3846;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.lesson {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.082) 0px 0px 0px 1px;
+    width: 750px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    font-size: 1.85rem;
+    color: #149ef2;
+}
+
+.lesson-span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#lesson1-p {
+    text-align: center;
+    margin-top: 50px;
+    color: #2d3846;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 1.65rem;
+    font-weight: 600;
+}
+
+#back-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#back-btn {
+    color: #2d3846;
+    /* background-color: green; */
+    /* padding: 15px; */
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#test-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+#test-p {
+    display: flex;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+.lesson-input {
+    width: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+#main-lesson-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #22222244;
+    border-radius: 15px;
+    background-color: white;
+    padding: 30px 100px 50px;
+    width: fit-content;
+    /* gap: 20px; */
+    margin-top: 75px;
+}
+
+#next-btn {
+    margin-top: 50px;
+    color: rgb(241, 241, 241);
+    border: none;
+    background-color: #2493df;
+    border-radius: 10px;
+    padding: 15px 50px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+#main-body-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+
+.output-p {
+    font-size: 1.3rem;
+    color: #222;
+    font-weight: 500;
+}
+
+#lesson2-input {
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #3f3f3f;
+}
+
+#prev-btn {
+    margin-top: 50px;
+    color: rgb(241, 241, 241);
+    border: none;
+    background-color: rgb(255, 77, 77);
+    border-radius: 10px;
+    padding: 15px;
+    width: 130px;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+#next2-btn {
+    margin-top: 50px;
+    color: rgb(241, 241, 241);
+    border: none;
+    background-color: #2493df;
+    border-radius: 10px;
+    padding: 15px;
+    width: 130px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-left: 30px;
+}

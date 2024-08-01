@@ -4,6 +4,12 @@ const Navbar = () =>{
     return(
         <>
             <nav id="navbar">
+                <div id="logo-div">
+                    <p className="logo-p goa">{"<GOA>"}</p>
+                    <p className="logo-p academy">{"<ACADEMY>"}</p>
+                </div>
+
+                <div id="navbar-a">
                 <Link to={"/"}>
                     Home
                 </Link>
@@ -13,9 +19,13 @@ const Navbar = () =>{
                 <Link to={"/Abouts"}>
                     <a className="About">About</a>
                 </Link>
+
+                </div>
+                <div id="sign-up">
                 <Link to={"/SignUp"}>
-                    <a>Signup</a>
+                    <p id="sign-up-p">Register</p>
                 </Link>
+                </div>
             </nav>
 
 

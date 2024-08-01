@@ -4,16 +4,17 @@ import { Link } from "react-router-dom"
 const ForCourse = () => {
     return(
         <>
-
+            <div id="lessons-div">
                 <Link to={"/Courses/p1"} id="linkid">
-                    <div id="idk">Lesson 1</div>
+                    <div className="lesson"><span className="lesson-span"><i class="fa-solid fa-quote-left"></i> Coding Syntax</span> <span>❌</span></div>
                 </Link>
                 <Link to={"/Courses/p2"} id="linkid2">
-                    <div id="idk2">Lesson 2</div>
+                    <div className="lesson"><span className="lesson-span"><i class="fa-solid fa-print"></i> Print Function</span> <span>❌</span></div>
                 </Link>
                 <Link to={"/Courses/p7"}> 
-                    <div id="idk3">Lesson 3</div>
+                    <div className="lesson"><span className="lesson-span"><i class="fa-solid fa-box"></i> Creating Variables</span> <span>❌</span></div>
                 </Link>
+            </div>
         </>
     )
 }
