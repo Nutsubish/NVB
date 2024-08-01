@@ -7,7 +7,7 @@ const Ex3 = () => {
 
     const handleButtonClick = (button) => {
         setSelectedButton(button);
-        if (button === 'myvariable') {
+        if (button == 'myvariable') {
             setIsCorrect(true);
         } else {
             setIsCorrect(false);
