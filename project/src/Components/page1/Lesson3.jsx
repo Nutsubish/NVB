@@ -46,4 +46,4 @@ const Lesson1Task3 = () => {
     );
 }
 
-export default Lesson1Task3;
+export default Lesson1Task3
