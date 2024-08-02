@@ -5,7 +5,7 @@ const Navbar = () =>{
         <>
             <nav id="navbar">
                 <div id="logo-div">
-                    <p className="logo-p goa">{"<GOA>"}</p>
+                    <p className="logo-p goa">{"<NVB>"}</p>
                     <p className="logo-p academy">{"<ACADEMY>"}</p>
                 </div>
 

@@ -1,49 +1,20 @@
-import { Link } from "react-router-dom";
-import { useState } from "react";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const Lesson1Task3 = () => {
-    const [inputValue, setInputValue] = useState('');
+const Lesson3Task3 = () =>{
 
-    const handleInputChange = (e) => {
-        setInputValue(e.target.value);
-    };
 
-    const isButtonDisabled = inputValue !== '1';
-
-    return (
+    return(
         <>
-            <div id="main-body-div">
-                <div id="main-lesson-div">
-                    <p id="lesson1-p">Task No.3</p>
-                    <div id="back-menu">
-                        <Link to={"/Courses"}>
-                            <button id="back-btn">X Back to Menu</button>
-                        </Link>
-                    </div>
-
-                    <div id="test-div">
-                        <p className="output-p">What is the output of this code?</p>
-                        <p className="output-p">print(5 % 2)</p><br />
-                        <input 
-                            type="text" 
-                            id="lesson2-input" 
-                            value={inputValue} 
-                            onChange={handleInputChange}
-                        />
-                    </div>
-
-                    <div id="navigation-buttons">
-                        <Link to={"/Courses/p3"}>
-                            <button id="prev-btn">Previous Task</button>
-                        </Link>
-                        <Link to={"/Courses"}>
-                            <button id="next2-btn" disabled={isButtonDisabled}>Next Lessons</button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+        <h1>hello this Lesson 3 task 3</h1>
+        <Link to={"/Courses"}>
+            <button>Next Task</button>
+        </Link>
+        <Link to={"/Courses/p8"}>
+            <button>Previous Task</button>
+        </Link>
         </>
-    );
+    )
 }
 
-export default Lesson1Task3
+export default Lesson3Task3

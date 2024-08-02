@@ -1,11 +1,14 @@
 
+import React, { useState, useEffect } from 'react';
 
-const Signup = () => {
-    return(
-        <>
-            <h1>Hello</h1>
-        </>
-    )
+const  Signup = () => {
+    
+
+  return (
+    <>
+        
+    </>
+  );
 }
 
 export default Signup

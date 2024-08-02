@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 const Ex1 = () =>{
     const [inputValue, setInputValue] = useState('');
@@ -14,8 +14,10 @@ const Ex1 = () =>{
     const handleInputChange2 = (e) => {
         setInputValue2(e.target.value);
     };
+    useEffect(() => {
 
-
+    })
+    
     return (
         <>
         <div id="main-body-div">
@@ -46,3 +48,5 @@ const Ex1 = () =>{
 }
 
 export default Ex1
+
+
