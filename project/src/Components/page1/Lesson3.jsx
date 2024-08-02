@@ -13,9 +13,7 @@ const Lesson1Task3 = () =>{
             setIsCorrect(false);
         }
     };
-    useEffect(()=>{
-        
-    },[])
+
 
 
     return(
@@ -34,7 +32,7 @@ const Lesson1Task3 = () =>{
                 if (isCorrect == true) {
                     return (
                         <Link to="/Courses">
-                            <button id='nextbtn'>Next Task</button>
+                            <button id='nextbtn' onClick={window.localStorage.setItem('task1','done')}>Next Task</button>
                         </Link>
                     );
                 } else {

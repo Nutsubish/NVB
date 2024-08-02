@@ -12,7 +12,7 @@ const Lesson2Task3 = () =>{
                 <button>Previous Task</button>
             </Link>
             <Link to={"/Courses"}>
-                <button>Continue</button>
+                <button onClick={window.localStorage.setItem('task2','done')}>Continue</button>
             </Link>
         </>
     )
