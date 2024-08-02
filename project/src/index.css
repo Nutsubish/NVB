@@ -300,10 +300,3 @@ body {
     margin-left: 30px;
 }
 
-button {
-    transition: 0.25s;
-}
-
-button:hover {
-    transform: scale(105%);
-}

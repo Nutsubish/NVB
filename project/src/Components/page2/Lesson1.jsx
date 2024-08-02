@@ -7,21 +7,25 @@ const Ex2 = () => {
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
-
+    const disabled = inputValue !== 'print'
     return (
         <>
-            <h1 id='hellovano'>Hello this is Lesson 2 Task 1</h1>
-            <p id="vanos">Fix this Code</p>
-            <p id="vano">
+            <h1>Hello this is Lesson 2 Task 1</h1>
+            <h1>Fix this Code</h1>
+
+            <div>
                 <input type="text" value={inputValue} onChange={handleInputChange} />
                 ("Hello World")
-            </p>
-            <Link to={"/Courses/p4"} >
-                <button disabled={inputValue !== 'print'} id='vano'>Next Task</button>
+            </div>
+
+            <Link to={"/Courses/p4"}>
+                <button disabled={disabled} >Next Task</button>
             </Link>
+
             <Link to={"/Courses"}>
                 <button>Back to Menu</button>
             </Link>
+            
         </>
     );
 }

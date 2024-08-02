@@ -32,7 +32,7 @@ const Ex3 = () => {
             </button>
 
             {(() => {
-                if (isCorrect) {
+                if (isCorrect == true) {
                     return (
                         <Link to="/Courses/p8">
                             <button id='nextbtn'>Next Task</button>

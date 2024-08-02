@@ -15,14 +15,14 @@ const Lesson2Task2 = () => {
 
     return (
         <>
-            <h1 id='hellovano'>Hello this is Lesson 2 Task 2</h1>
-            <p id="vanos">Fix this Code</p>
-            <p id="vano">
+            <h1>Hello this is Lesson 2 Task 2</h1>
+            <p>Fix this Code</p>
+            <div>
                 print
                 <input type="text" value={inputValue} onChange={handleInputChange} id="vanogastile" />
                 "Hello"
                 <input type="text" value={inputValue2} onChange={handleInputChange2} id="vanogastile" />
-            </p>
+            </div>
             <Link to={"/Courses/p6"}>
                 <button disabled={inputValue != '(' || inputValue2 != ')'}>Next Task</button>
             </Link>

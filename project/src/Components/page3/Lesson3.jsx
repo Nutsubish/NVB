@@ -6,7 +6,7 @@ const Lesson3Task3 = () =>{
         <>
         <h1>hello this Lesson 3 task 3</h1>
         <Link to={"/Courses"}>
-            <button>Back To Menu</button>
+            <button>Continue</button>
         </Link>
         <Link to={"/Courses/p8"}>
             <button>Previous Task</button>
