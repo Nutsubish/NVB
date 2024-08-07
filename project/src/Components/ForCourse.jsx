@@ -5,6 +5,7 @@ const ForCourse = () => {
     const [isDone, setIsDone] = useState(false);
     const [isDone2, setIsDone2] = useState(false);
     const [isDone3, setIsDone3] = useState(false);
+
     useEffect(() => {
             if (window.localStorage.getItem('task1')) {
             setIsDone(true);
@@ -22,6 +23,8 @@ const ForCourse = () => {
             setIsDone3(true)
         }
     },[]);
+
+
 
 
     return (

@@ -300,3 +300,11 @@ body {
     margin-left: 30px;
 }
 
+
+
+#hearts{
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+

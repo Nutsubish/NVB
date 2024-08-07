@@ -9,8 +9,12 @@ const Ex3 = () => {
         setSelectedButton(button);
         if (button == 'myvariable') {
             setIsCorrect(true);
-        } else {
+        } else if (button == '.-myvariable'){
             setIsCorrect(false);
+            localStorage.setItem('L3Task1','incorrect')
+        }else if(button == 'my variable'){
+            setIsCorrect(false);
+            localStorage.setItem('L3Task1a','incorrect')
         }
     };
 
@@ -23,8 +27,8 @@ const Ex3 = () => {
                 .-myvariable
             </button>
 
-            <button onClick={() => handleButtonClick('my-variable')} id="vanosbtn">
-                my-variable
+            <button onClick={() => handleButtonClick('my variable')} id="vanosbtn">
+                my variable
             </button>
 
             <button onClick={() => handleButtonClick('myvariable')} id="vanos btn 2">

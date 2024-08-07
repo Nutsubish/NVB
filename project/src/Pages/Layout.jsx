@@ -7,6 +7,7 @@ const Layouts = () =>{
         
             <> 
             <Navbar/>
+            
             <main>
                 <Outlet/>
             </main>
