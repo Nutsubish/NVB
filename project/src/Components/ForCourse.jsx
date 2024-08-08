@@ -40,21 +40,8 @@ const ForCourse = () => {
             <header>
                 <div class="container2">
                     <h1>Introduction to <span id="python-span1">Pyt</span><span id="python-span2">hon</span></h1>
-                    <meter min={0} max={100} value={100} low={35} high={76} optimum={80} id="python-meter"></meter>
+                    <meter min={0} max={100} value={50} low={35} high={76} optimum={80} id="python-meter"></meter>
                 </div>
-                <div id='green-bar'>
-                        <div id="green-bar-flex">
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-   
-                            </div>
-                        </div>
-                    </div>
             </header>
             <div id="lessons-div">
                 <Link to={"/Courses/p1"} id="linkid">
