@@ -14,12 +14,14 @@ import Signup from "./Pages/SignUp.jsx";
 import Ex3 from "./Components/page3/Lesson1.jsx";
 import Lesson3Task2 from "./Components/page3/Lesson2.jsx";
 import Lesson3Task3 from "./Components/page3/Lesson3.jsx";
+import ForCourse from "./Components/ForCourse.jsx";
+import ForCourse1 from "./Components/ForCourse1.jsx"
 
 const Main = () => {
 
     return (
-      <>
-      <Router>
+
+        <Router>
           <Routes>
             <Route element={<Layouts/>}>
                 <Route path="/" element={<Homes/>}/>
@@ -35,10 +37,12 @@ const Main = () => {
                 <Route path="/Courses/p7" element={<Ex3/>}/>
                 <Route path="/Courses/p8" element={<Lesson3Task2/>}/>
                 <Route path="/Courses/p9" element={<Lesson3Task3/>}/>
+                <Route path="/Courses/Python" element={<ForCourse/>} />
+                <Route path="/Courses/Html" element={<ForCourse1/>}/>
             </Route>
           </Routes>
         </Router>
-      </>
+
       
     )
   }
