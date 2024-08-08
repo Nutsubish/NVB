@@ -14,6 +14,10 @@ body {
     background-color: #f2f5f7;
 }
 
+:hover {
+    cursor: url('./assets/0dd4f12552e54edafcbc63802201d420Ae4TF32EXk8MEPeD-3.png'), auto;
+}
+
 #navbar {
     display: flex;
     justify-content: space-evenly;
@@ -25,7 +29,7 @@ body {
 
 #navbar-a {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 #navbar a {
@@ -33,42 +37,11 @@ body {
     color: #222;
     /* font-size: 1.15rem; */
     color: white;
+    transition: 0.25s;
 }
 
-#navbar a {
-    color: #ffffff;
-    cursor: pointer;
-    position: relative;
-    border: none;
-    background: none;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 1000ms;
-    transition-property: color;
-}
-
-#navbar a:focus,
 #navbar a:hover {
-    color: #ffffff;
-}
-
-#navbar a:focus:after,
-#navbar a:hover:after {
-    width: 100%;
-    left: 0%;
-}
-
-#navbar a:after {
-    content: "";
-    pointer-events: none;
-    bottom: -10px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: rgb(0, 145, 0);
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 550ms;
-    transition-property: width, left;
+    color: green;
 }
 
 #logo-div {
@@ -82,6 +55,10 @@ body {
     font-family: "Press Start 2P", system-ui;
     color: #d1d1d1;
     text-align: center;
+}
+
+#diamond-logo {
+    width: 25px;
 }
 
 .goa {
@@ -151,11 +128,16 @@ body {
     gap: 20px;
 }
 
+#lessons-div a:hover {
+    transform: scale(105%);
+}
+
 #lessons-div a {
     color: #2d3846;
     font-size: 1.3rem;
     font-weight: 500;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 .lesson {
@@ -251,6 +233,15 @@ body {
     padding: 15px 50px;
     font-size: 1.3rem;
     font-family: sans-serif;
+    transition: 0.15s;
+}
+
+#next-btn:hover {
+    background-color: #4bb6fd;
+}
+
+#next2-btn:hover {
+    background-color: #4bb6fd;
 }
 
 #main-body-div {
@@ -285,6 +276,11 @@ body {
     width: 130px;
     font-size: 1rem;
     font-family: sans-serif;
+    transition: 0.15s;
+}
+
+#prev-btn:hover {
+    background-color: rgb(255, 100, 100);
 }
 
 #next2-btn {
@@ -297,6 +293,274 @@ body {
     width: 130px;
     font-size: 1rem;
     font-family: sans-serif;
-    margin-left: 30px;
+    transition: 0.15s;
 }
 
+
+
+#hearts{
+    display: flex;
+    gap: 5px;
+    color: white;
+}
+
+.lesson-disabled {
+    background-color: rgba(165, 165, 165, 0.418);
+    border: 1px solid #2222224b;
+}
+
+
+
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header span {
+    color: #ff9e43;
+}
+
+.intro, .courses, .cta {
+    background: #fff;
+    padding: 2rem 0;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.intro ul, .courses ul {
+    list-style: none;
+}
+
+.intro li, .courses li {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: #e67e22;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background: #ffa34d;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+
+#goa-gif {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 180px;
+}
+
+.container3 {
+    margin-left: 150px;
+}
+
+
+
+#main2 {
+    padding: 20px;
+    margin: 50px auto;
+    display: flex;
+    width: 85%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+#right-div-about h3 {
+    font-size: 1.5rem;
+    /* margin-top: 50px; */
+}
+
+h2 {
+    color: #007BFF;
+    font-size: 3rem;
+}
+
+.founder-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
+}
+
+.founder-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.founder-info {
+    max-width: 500px;
+}
+
+.founder-info h4 {
+    margin: 0;
+    color: #007BFF;
+    font-size: 1.25rem;
+}
+
+#creators-span {
+    color: green;
+}
+
+#python-span1 {
+    color: #3770a0;
+}
+
+#python-span2 {
+    color: #ffd848;
+}
+
+.button-answer {
+    padding: 10px 50px;
+    border: none;
+    background-color: rgb(204, 204, 204);
+    font-size: 1.25rem;
+    width: 85%;
+    transition: 0.25s;
+}
+
+.button-answer:hover {
+    transform: scale(105%);
+}
+
+#buttons-div3 {
+    display: flex;
+    gap: 30px;
+}
+
+#p2-l1 {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+#lesson-input {
+    font-size: 1.2rem;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+}
+
+#p2-l1-p {
+    font-size: 1.45rem;
+}
+
+#fix-p {
+    font-size: 1.75rem;
+    color: #222;
+    font-weight: 500;
+}
+
+#main-l3 {
+    display: flex;
+    justify-content: center;
+}
+
+.l3-p {
+    font-size: 1.2rem;
+}
+
+#emojis {
+    font-size: 2rem;
+}
+
+#p3-l1-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+}
+
+#disabled-btn {
+    margin-top: 50px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: #0000006b;
+    border-radius: 10px;
+    padding: 15px;
+    width: 130px;
+    font-size: 1rem;
+    font-family: sans-serif;
+    transition: 0.15s;
+}
+
+#disabled-btn:hover {
+    background-color: #000000b6;
+}
+
+#green-h2 {
+    color: green;
+}
+
+iframe {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+}

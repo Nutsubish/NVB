@@ -4,13 +4,20 @@ import { Link } from 'react-router-dom';
 const Lesson3Task3 = () =>{
     return(
         <>
-        <h1>hello this Lesson 3 task 3</h1>
-        <Link to={"/Courses"}>
-            <button onClick={window.localStorage.setItem('task3','done')}>Continue</button>
-        </Link>
-        <Link to={"/Courses/p8"}>
-            <button>Previous Task</button>
-        </Link>
+        <div id="main-body-div">
+            <div id="main-lesson-div">
+                <h1>Task No.3</h1>
+
+                <div id='buttons-div3'>
+                    <Link to={"/Courses"}>
+                        <button id='next2-btn' onClick={window.localStorage.setItem('task3','done')}>Continue</button>
+                    </Link>
+                    <Link to={"/Courses/p8"}>
+                        <button id='prev-btn'>Previous Task</button>
+                    </Link>
+                </div>
+            </div>
+        </div>
         </>
     )
 }

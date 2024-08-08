@@ -23,7 +23,7 @@ const Lesson1Task2 = () => {
                         <Link to={"/Courses"}>
                             <button id="back-btn">X Back to Menu</button>
                         </Link>
-
+        
                     </div>
 
                     <div id="test-div">
@@ -36,8 +36,7 @@ const Lesson1Task2 = () => {
 
                     </div>
 
-                    <div id="navigation-buttons">
-
+                    <div id="buttons-div3">
                         <Link to={"/Courses/p1"}>
                             <button id="prev-btn">Previous Task</button>
                         </Link>

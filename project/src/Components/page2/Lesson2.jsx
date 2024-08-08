@@ -15,20 +15,28 @@ const Lesson2Task2 = () => {
 
     return (
         <>
-            <h1>Hello this is Lesson 2 Task 2</h1>
-            <p>Fix this Code</p>
-            <div>
-                print
-                <input type="text" value={inputValue} onChange={handleInputChange} id="vanogastile" />
-                "Hello"
-                <input type="text" value={inputValue2} onChange={handleInputChange2} id="vanogastile" />
+        <div id="main-body-div">
+            <div id="main-lesson-div">
+                <h1 id="lesson1-p">Task No.2</h1>
+                <p id="fix-p">Fix this Code</p><br></br>
+                <div id="p2-l1">
+                    <p id="p2-l1-p">print</p>
+                    <input type="text" value={inputValue} onChange={handleInputChange} id="lesson-input" />
+                    <p id="p2-l1-p">"Hello"</p>
+                    <input type="text" value={inputValue2} onChange={handleInputChange2} id="lesson-input" />
+                </div>
+
+                <div id="buttons-div3">
+                    <Link to={"/Courses/p6"}>
+                        <button id="next2-btn" disabled={inputValue != '(' || inputValue2 != ')'}>Next Task</button>
+                    </Link>
+                    <Link to={"/Courses/p2"}>
+                        <button id="prev-btn">Previous Task</button>
+                    </Link>
+                </div>
+
+                </div>
             </div>
-            <Link to={"/Courses/p6"}>
-                <button disabled={inputValue != '(' || inputValue2 != ')'}>Next Task</button>
-            </Link>
-            <Link to={"/Courses/p2"}>
-                <button>Previous Task</button>
-            </Link>
         </>
     );
 }

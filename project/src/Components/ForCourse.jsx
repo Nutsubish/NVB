@@ -5,6 +5,7 @@ const ForCourse = () => {
     const [isDone, setIsDone] = useState(false);
     const [isDone2, setIsDone2] = useState(false);
     const [isDone3, setIsDone3] = useState(false);
+
     useEffect(() => {
             if (window.localStorage.getItem('task1')) {
             setIsDone(true);
@@ -24,13 +25,20 @@ const ForCourse = () => {
     },[]);
 
 
+
+
     return (
         <>
+            <header>
+                <div class="container2">
+                    <h1>Introduction to <span id="python-span1">Pyt</span><span id="python-span2">hon</span></h1>
+                </div>
+            </header>
             <div id="lessons-div">
                 <Link to={"/Courses/p1"} id="linkid">
                     <div className="lesson">
                         <span className="lesson-span"><i className="fa-solid fa-quote-left"></i> Coding Syntax</span> 
-                        <span>{isDone ? "✔️" : "❌"}</span>
+                        <span>{isDone ? "✔️" : "🏁"}</span>
                     </div>
                 </Link>
                 
@@ -38,11 +46,11 @@ const ForCourse = () => {
                     <Link to={"/Courses/p2"} id="linkid2">
                         <div className="lesson">
                             <span className="lesson-span"><i className="fa-solid fa-print"></i> Print Function</span> 
-                            <span>{isDone2 ? "✔️" : "❌"}</span>
+                            <span>{isDone2 ? "✔️" : ""}</span>
                         </div>
                     </Link>
                 ) : (
-                    <div className="lesson disabled">
+                    <div className="lesson disabled lesson-disabled">
                         <span className="lesson-span"><i className="fa-solid fa-print"></i> Print Function</span> 
                         <span>❌</span>
                     </div>
@@ -52,12 +60,12 @@ const ForCourse = () => {
                     <Link to={"/Courses/p7"}>
                     <div className="lesson">
                         <span className="lesson-span"><i className="fa-solid fa-box"></i> Creating Variables</span> 
-                        <span>{isDone3 ? "✔️" : "❌"}</span>
+                        <span>{isDone3 ? "✔️" : ""}</span>
                     </div>
                 </Link>
                 ):(
 
-                    <div className="lesson disabled">
+                    <div className="lesson disabled lesson-disabled">
                         <span className="lesson-span"><i className="fa-solid fa-box"></i> Creating Variables</span> 
                         <span>❌</span>
                     </div>
