@@ -32,6 +32,7 @@ const ForCourse = () => {
             <header>
                 <div class="container2">
                     <h1>Introduction to <span id="python-span1">Pyt</span><span id="python-span2">hon</span></h1>
+                    <meter min={0} max={100} value={100} low={35} high={76} optimum={80} id="python-meter"></meter>
                 </div>
             </header>
             <div id="lessons-div">
@@ -46,7 +47,7 @@ const ForCourse = () => {
                     <Link to={"/Courses/p2"} id="linkid2">
                         <div className="lesson">
                             <span className="lesson-span"><i className="fa-solid fa-print"></i> Print Function</span> 
-                            <span>{isDone2 ? "✔️" : ""}</span>
+                            <span>{isDone2 ? "✔️" : "🏁"}</span>
                         </div>
                     </Link>
                 ) : (
@@ -60,7 +61,7 @@ const ForCourse = () => {
                     <Link to={"/Courses/p7"}>
                     <div className="lesson">
                         <span className="lesson-span"><i className="fa-solid fa-box"></i> Creating Variables</span> 
-                        <span>{isDone3 ? "✔️" : ""}</span>
+                        <span>{isDone3 ? "✔️" : "🏁"}</span>
                     </div>
                 </Link>
                 ):(

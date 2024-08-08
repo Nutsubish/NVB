@@ -29,8 +29,8 @@ const Ex1 = () =>{
                     <Link to={"/Courses"}>
                         <button id="back-btn">X Back to Menu</button>
                     </Link>
-
                     </div>
+                        <p className="p1-l1">Finish the Code</p>
 
                     <div id="test-div">
 
