@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { json } from "react-router-dom";
 import diamond from "../assets/diamond.png"
 
 const Navbar = () => {
@@ -22,7 +23,8 @@ const Navbar = () => {
         setHearts(newHearts);
 
 
-        localStorage.setItem('hearts', newHearts);
+        localStorage.setItem('hearts', JSON.stringify(newHearts));
+        
     },[]);
 
     // useEffect(() => {
